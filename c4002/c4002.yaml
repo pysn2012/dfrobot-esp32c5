@@ -39,8 +39,8 @@ wifi:
 # UART配置
 uart:
   id: uart_bus
-  tx_pin: GPIO17
-  rx_pin: GPIO16
+  tx_pin: GPIO11
+  rx_pin: GPIO12
   baud_rate: 115200
 
 # C4002 组件配置
