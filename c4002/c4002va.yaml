@@ -2,7 +2,7 @@
 substitutions:
   device_name: c4002
   friendly_name: c4002
-  allowed_characters: "状态距离无目标静止存在运动中未知.0123456789m"
+  allowed_characters: "状态：距离无目标静止存在运动中未知.0123456789m"
 
 # ESPHome 核心配置
 esphome:
