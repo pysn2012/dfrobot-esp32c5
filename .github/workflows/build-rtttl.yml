@@ -1,5 +1,5 @@
 # 工作流名称
-name: build va
+name: build rtttl
 
 # 触发条件
 on:
@@ -39,7 +39,7 @@ jobs:
           # 进入配置文件目录
           cd c4002
           # 编译固件，生成bin文件
-          esphome compile c4002va.yaml
+          esphome compile c4002rtttl.yaml
 
       # 步骤5：动态查找编译产物
       - name: 动态查找 firmware.bin
@@ -68,5 +68,5 @@ jobs:
             ${{ steps.find_fw.outputs.FIRMWARE }}
             ${{ steps.find_fw.outputs.OTA }}
             ${{ steps.find_fw.outputs.FACTORY }}
-            c4002/c4002va.yaml
+            c4002/c4002rtttl.yaml
           retention-days: 30
