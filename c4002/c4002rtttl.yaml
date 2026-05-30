@@ -285,10 +285,10 @@ script:
             int required_consecutive;
 
             // 人来防抖 1.5s（避免快速误触发）
-            // 人走防抖 8s + 需连续 60 帧确认（防止雷达短暂丢目标导致误报）
+            // 人走防抖 3s + 需连续 30 帧确认（防止雷达短暂丢目标导致误报）
             if (raw_status == 0) {
-              debounce_time = 8000;
-              required_consecutive = 60;
+              debounce_time = 3000;
+              required_consecutive = 30;
             } else {
               debounce_time = 1500;
               required_consecutive = 0;
